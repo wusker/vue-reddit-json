@@ -1,28 +1,44 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <h1>r/rarepuppers</h1>
+    </header>
+    <Posts />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Posts from "./components/Posts.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Posts
   }
-}
+};
 </script>
 
 <style>
-#app {
+body {
+  margin: 0 auto;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background: #2c3e50;
+  overflow-x: hidden;
+  max-width: 2000px;
+}
+h1 {
+  margin: 0;
+  font-size: 1rem;
+}
+#app {
+  color: white;
+}
+header {
+  padding-left: 1vw;
+  width: 100%;
+  background: black;
+  color: white;
 }
 </style>
